@@ -215,7 +215,8 @@ i{
                       .port, .cd{ flex-direction: column;}
                       
                       .texto{
-                             
+                             width: 400px;
+                             height: 270px;
                              padding: 0.15em;
                              line-height: 1.5em;
                              flex-direction: column;
