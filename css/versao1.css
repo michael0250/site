@@ -1,4 +1,5 @@
 *{
+   
     margin: 0px;
     padding: 0px; 
     box-sizing: border-box;
@@ -12,22 +13,29 @@ ul{
     align-items: center;
     list-style: none;}
 
-.menu img{ width: 200px;}
+.menu img{ 
+           width: 200px;
+          }
 
 a{
   cursor: pointer;
   color:#000;
   font-size: 18px;
-  text-decoration: none; 
-  padding:0px;
+  text-decoration: none;   
 }
+
+body{ width:100%;}
 
 .menu{      
         top: 0px;
         left: 0px;
+        width:100%;
+        height: 90px;
         display: flex;
         position: fixed;
         padding: 20px 50px;
+        align-items: center;
+        align-content: center;
         background-color:#fff;
         justify-content: space-between;
         z-index: 999;
@@ -35,7 +43,7 @@ a{
 
 .menu .lista{display: flex;}
     
-.menu li {margin:0px 15px;}
+.menu li {margin:0px 10px;}
 
 .menu li:first-child{ margin-left: 0;}
 
@@ -46,19 +54,13 @@ a:hover{
          transition: 0.5s;
         }
 
-.mobile{ 
-        cursor: pointer;
-        padding-left: 200px;
-        visibility: hidden;
-      }
-
 #home{
      display: flex;
      flex-direction:column;
      align-items: center;
      text-align: center;
      background-size: cover;
-     background-image: url("../img/hero2a.jpg");
+     background-image: url("../img/dev.jpeg");
      background-position:center top;
      background-repeat: no-repeat;
      background-attachment: fixed;
@@ -69,12 +71,12 @@ a:hover{
 h1{
     width:300px;
     height:70px;
-    margin:20px 50px;
-    padding: 13px;
-    color:#fff;
+    padding: 15px;
+    padding-top:450px;
+    margin-right: 60px;
+    color: #fff;;
     clear: both;
-    border: solid 4px;
-    font-size: 30px;
+    font-size:30px;
     font-family: Arial, Helvetica, sans-serif;
   }
 
@@ -83,7 +85,6 @@ h1{
        width: 100%;
        text-align: center;
        align-items: center;
-       flex-direction: column;
        justify-content: space-between;
        background-color: #fff;
       }
@@ -92,9 +93,14 @@ h1{
             padding: 1.2rem;
             font-size: 1.8rem;
             color:#000;
+            text-align: center;
           }
+.cv{ 
+     width: 50%;
+     height: 400px;
+    }
 
-.sub .texto{
+.sobre .texto{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -102,13 +108,14 @@ h1{
            }
 
 .texto{
-        width:100%;
-        height: 300px;
+        width:200;
+        height: 400px;
         color:#000;
-        padding: 0.15em;
+        padding:15px;
         font-size: 1.2rem;
         text-align: left;
         line-height: 1.5em; 
+      
       } 
 
 #port{
@@ -170,31 +177,32 @@ h1{
                text-align: center;
           }
 
-#contato, .social{
-                  float:right;
-                  font-size: 17px;
-                  padding-left: 2rem;
-                }
-
 .rodape{
         display: flex;
         padding: top -1rem;;
         text-align: center;
         flex-direction: column;
       }
-
+ 
 .social{
         display: flex;
         width: 250px;
         height: 60px;
         align-items: center;
         text-align: center;
+        justify-items: center;
       }
+
+  #midia{
+          display: flex;
+          text-align: center;
+  }
 
 .hb{
      color: #000;
      padding: 1rem;
      font-size: 9rem;  
+     
     }
           
 i{ 
@@ -202,29 +210,76 @@ i{
   font-size: 2rem;
 }
 
-@media screen and ( max-width:600px){
-                        
-                      .menu{flex-direction: column;}
+@media screen and ( max-width:767px){
 
+                  body{
+                        width: 100%;
+                  }
+                        
+                  .menu{
+                        width: 100%;
+                        height: 50vh;
+                        display: flex;
+                        padding: 0px,30px;
+                        background-color: #fff;
+                        background-attachment: fixed;
+                        flex-direction: column;
+                      }
+                  .lista,.ls{
+                             top: 0px;
+                             left: 0px;
+                             padding:0px,10px;
+                             margin:0px;
+                             display: flex;
+                             width: 100%;
+                             text-align: center;
+                             line-height: 1.5rem;
+                             align-items: center;
+                             flex-direction: column;
+                  }   
+                  
+                 #home,.mn{ 
+                           padding-top:30px;
+                           text-align:center;
+                           align-items: center;
+                           line-height: 1.5em;
+                           padding: 15px;
+                           margin: 15px;
+                      }
+                  
                       img{ margin-bottom:1.5rem;}
                        
-                      .home{align-items: center;}
+                      #home{align-items: center;}
                        
                       .port, .card {flex-direction: column;}
                        
                       .port, .cd{ flex-direction: column;}
+                    
+                      .cv{ width: 45%;
+                      }
                       
                       .texto{
-                             width: 400px;
+                             height: 400px;
+                             width: 100%;
+                             color:#000;
                              height: 300px;
-                             padding: 0.15em;
-                             line-height: 1.5em;
+                             text-align: left;
+                             font-size: 1rem;
+                             font-family: Arial, Helvetica, sans-serif;
+                             line-height: 1.em;
                              flex-direction: column;
+                             
+                             color:#000;
+        
                             }
+
+                          h1{ font-size: 25px;
+                              padding-top:250px;}
                           }
+                          
 
 
-/*<i class="fas fa-laptop"> <i class="fas fa-bars"></i>*/
+/*<i class="fas fa-laptop"> </<i class="fas fa-bars">i>*/
     
     /*corrigir o portfolio resolvido \ 0/ */
     
