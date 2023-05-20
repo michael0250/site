@@ -220,7 +220,7 @@ i{
                         width: 100%;
                         height: 50vh;
                         display: flex;
-                        padding: 0px,30px;
+                        padding: 0px,10px;
                         background-color: #fff;
                         background-attachment: fixed;
                         flex-direction: column;
@@ -239,7 +239,7 @@ i{
                   }   
                   
                  #home,.mn{ 
-                           padding-top:30px;
+                           padding-top:10px;
                            text-align:center;
                            align-items: center;
                            line-height: 1.5em;
